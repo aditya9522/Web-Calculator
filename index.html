@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h4>CALCULATOR</h4>
+        </div>
+        <h4 id="history"></h4>
+        <div class="display-result">
+            <p></p>
+        </div>
+        <div class="buttons">
+            <button class="clean" onclick="
+                document.getElementsByTagName('p')[0].innerText = '';
+                result = '';
+                document.querySelector('#history').innerHTML = 'Cleared';
+
+                ">AC</button>
+            <button class="clean" onclick="back()">C</button><br>
+            <button class="number" onclick="buttonClickEvent('9')">9</button>
+            <button class="number" onclick="buttonClickEvent('8')">8</button>
+            <button class="number" onclick="buttonClickEvent('7')">7</button>
+            <button class="operator" onclick="buttonClickEvent('+')">+</button>
+            <button class="number" onclick="buttonClickEvent('6')">6</button>
+            <button class="number" onclick="buttonClickEvent('5')">5</button>
+            <button class="number" onclick="buttonClickEvent('4')">4</button>
+            <button class="operator" onclick="buttonClickEvent('-')">−</button>
+            <button class="number" onclick="buttonClickEvent('3')">3</button>
+            <button class="number" onclick="buttonClickEvent('2')">2</button>
+            <button class="number" onclick="buttonClickEvent('1')">1</button>
+            <button class="operator" onclick="buttonClickEvent('/')">/</button>
+            <button class="number" onclick="buttonClickEvent('.')">•</button>
+            <button class="number" onclick="buttonClickEvent('0')">0</button>
+            <button class="operator" onclick="buttonClickEvent('%')" style="width: 75px;">%</button>
+            <button class="operator" onclick="buttonClickEvent('x')">x</button>
+            <button class="equal-to" onclick="calculation()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
