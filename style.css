@@ -1,10 +1,15 @@
+body {
+    background-color: #d8f3ff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
 .container {
     width: 400px;
-    height: 620px;
+    height: auto;
     border-radius: 15px;
     border: none;
     background: whitesmoke;
-    margin: 70px auto;
+    margin: auto;
     box-shadow: 3px 5px 10px black;
 }
 
@@ -12,56 +17,52 @@
     display: block;
     position: relative;
     font-size: 30px;
-    /* background: rgb(255, 255, 255); */
-    color: rgb(0, 136, 255);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #00aeff;
     text-align: center;
-    border-radius: 10px;
     top: 15px;
     margin: 15px;
-
 }
 
 #history {
     display: block;
     text-align: right;    
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(108, 108, 108);
     font-size: 20px;
     margin-bottom: 0px;
     margin-right: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .display-result p{
     font-size: 30px;
     height: 30px;
     text-align: right;
-    margin: 0px 15px 15px;
+    margin: 0px 17px 15px;
     border-radius: 10px;
     border: 2px solid rgb(126, 126, 126);
+    color: #00aeff;
     padding: 15px;
     background: rgb(255, 255, 255);
     font-weight: 800;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .buttons {
     display: block;
     position:relative;
-    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 
 .clean {
     width: 172px;
     margin: 8px;
     border: none;
-    background-color: rgb(223, 222, 222);
+    background-color: #00aeff;
     border-radius: 5px;
     font-size: 30px;
     color: rgb(255, 255, 255);
     padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -71,13 +72,13 @@
 }
 
 .number {
+    width: 76px;
     margin: 8px;
+    padding: 10px 30px;
     border: none;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    padding: 10px 30px;
 }
 
 .number:active {
@@ -86,11 +87,12 @@
 }
 
 .operator {
+    width: 76px;
     margin: 8px;
     border: none;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(0, 174, 255);
+    background-color: #00aeff;
+    color: white;
     border-radius: 5px;
     padding: 10px 30px;
 }
@@ -101,13 +103,14 @@
 }
 
 .equal-to {
-    margin: 8px;
+    margin: 15px;
+    margin-bottom: 15px;
     border: none;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(89, 255, 0);
+    background: #00aeff;
+    color: white;
     border-radius: 5px;
-    width: 94%;
+    width: 91%;
     padding: 10px;
 }
 
