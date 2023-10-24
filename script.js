@@ -6,15 +6,14 @@ window.addEventListener('load', (event)=>{
 let result = '';
 function buttonClickEvent(data){
     result += data;
-    document.getElementsByTagName('p')[0].style.border = '2px solid rgb(126, 126, 126)';
     document.getElementsByTagName('p')[0].innerText = result;
+    document.getElementsByTagName('p')[0].style.border = '2px solid rgb(126, 126, 126)';
 }
 
 function back(){
-    let finalLength = result.length - 1;
-    result = result.slice(0, finalLength);
+    let previousResult = document.getElementsByTagName('p')[0].innerText;
+    result = previousResult.slice(0, previousResult.length - 1);
     document.getElementsByTagName('p')[0].innerText = result;
-    return result;
 }
 
 function calculation(){
@@ -32,10 +31,4 @@ function calculation(){
     }
     
     document.getElementsByTagName('p')[0].innerText = result;
-    return result;
 }
-
-
-
-
-
